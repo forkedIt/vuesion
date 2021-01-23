@@ -1,5 +1,5 @@
 <template>
-  <component :is="as" :class="[$style.vueText, $style[color]]">
+  <component :is="as" :class="[$style.vueText, $style[color], serifs && $style.serifs]">
     <slot />
   </component>
 </template>
@@ -14,7 +14,8 @@ export default defineComponent({
   props: {
     as: { type: String, default: 'span' },
     appearance: { type: String, default: 'body' },
-    color: { type: String, default: 'high-emphasis', validator: textColorVariationValidator },
+    color: { type: String, default: null, validator: textColorVariationValidator },
+    serifs: { type: Boolean, default: false },
   },
   setup() {
     return {};
@@ -26,6 +27,10 @@ export default defineComponent({
 @import '~@/assets/design-system';
 
 .vueText {
+  &.serifs {
+    font-family: $font-family-serif;
+  }
+
   &.primary {
     color: var(--brand-primary);
   }

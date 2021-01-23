@@ -64,7 +64,13 @@ const config: Configuration = {
   css: [],
   head: {
     title: process.env.npm_package_name || '',
-    link: [{ rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Inter:200,400,600&display=swap' }],
+    link: [
+      {
+        rel: 'stylesheet',
+        href:
+          'https://fonts.googleapis.com/css?family=Inter:300,400,500,600,700,800|Lora:300,400,500,600,700,800&display=swap',
+      },
+    ],
   },
   i18n: {
     strategy: 'no_prefix',
