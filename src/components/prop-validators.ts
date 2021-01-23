@@ -9,6 +9,9 @@ export const textVariations = [
   'high-emphasis',
   'medium-emphasis',
   'low-emphasis',
+  'high-emphasis-inverse',
+  'medium-emphasis-inverse',
+  'low-emphasis-inverse',
 ];
 export const brandSpacings = ['none', 'sm', 'md', 'lg'];
 

@@ -2,10 +2,10 @@ import { storiesOf } from '@storybook/vue';
 import { textVariations } from '@/components/prop-validators';
 import VueHeadline from './VueHeadline.vue';
 
-const story = storiesOf('Atoms|Headline', module) as any;
+const story = storiesOf('Design System|Typography', module) as any;
 
 story.add(
-  'Headlines regular',
+  'Headline Levels',
   () => ({
     components: { VueHeadline },
     template: `<div>
@@ -25,7 +25,7 @@ story.add(
 );
 
 story.add(
-  'Semantic headline with different style',
+  'Headline with different appearance level',
   () => ({
     components: { VueHeadline },
     template: `<div>
@@ -40,7 +40,7 @@ story.add(
 );
 
 story.add(
-  'DIV as headline',
+  'Headline without semantics',
   () => ({
     components: { VueHeadline },
     template: `<div>
@@ -55,7 +55,7 @@ story.add(
 );
 
 story.add(
-  'Colors',
+  'Headline Colors',
   () => ({
     components: { VueHeadline },
     data() {
@@ -64,7 +64,7 @@ story.add(
       };
     },
     template: `<div>
-    <vue-headline v-for="color in textVariations" :key="color" :color="color" level="6">
+    <vue-headline v-for="color in textVariations" :key="color" :color="color" level="1">
       {{ color }}
     </vue-headline>
     </div>`,

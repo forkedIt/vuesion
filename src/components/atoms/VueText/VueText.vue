@@ -61,5 +61,17 @@ export default defineComponent({
   &.low-emphasis {
     color: var(--brand-low-emphasis-text-color);
   }
+
+  &.high-emphasis-inverse {
+    color: var(--brand-high-emphasis-text-color-inverse);
+  }
+
+  &.medium-emphasis-inverse {
+    color: var(--brand-medium-emphasis-text-color-inverse);
+  }
+
+  &.low-emphasis-inverse {
+    color: var(--brand-low-emphasis-text-color-inverse);
+  }
 }
 </style>

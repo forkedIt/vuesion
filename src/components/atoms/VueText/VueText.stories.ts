@@ -2,10 +2,10 @@ import { storiesOf } from '@storybook/vue';
 import { textVariations } from '@/components/prop-validators';
 import VueText from './VueText.vue';
 
-const story = storiesOf('Atoms|Text', module) as any;
+const story = storiesOf('Design System|Typography', module) as any;
 
 story.add(
-  'Colors',
+  'Text Colors',
   () => ({
     components: { VueText },
     data() {
