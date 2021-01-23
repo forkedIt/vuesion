@@ -6,7 +6,7 @@
 
 <script lang="ts">
 import { defineComponent } from '@vue/composition-api';
-import { textVariationValidator } from '@/components/prop-validators';
+import { textColorVariationValidator } from '@/components/prop-validators';
 
 export default defineComponent({
   name: 'VueText',
@@ -14,7 +14,7 @@ export default defineComponent({
   props: {
     as: { type: String, default: 'span' },
     appearance: { type: String, default: 'body' },
-    color: { type: String, default: 'high-emphasis', validator: textVariationValidator },
+    color: { type: String, default: 'high-emphasis', validator: textColorVariationValidator },
   },
   setup() {
     return {};
@@ -30,20 +30,24 @@ export default defineComponent({
     color: var(--brand-primary);
   }
 
-  &.secondary {
-    color: var(--brand-secondary);
+  &.neutral {
+    color: var(--brand-neutral);
   }
 
-  &.success {
-    color: var(--brand-success);
+  &.danger {
+    color: var(--brand-danger);
   }
 
   &.warning {
     color: var(--brand-warning);
   }
 
-  &.danger {
-    color: var(--brand-danger);
+  &.success {
+    color: var(--brand-success);
+  }
+
+  &.info {
+    color: var(--brand-info);
   }
 
   &.high-emphasis {

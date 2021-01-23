@@ -1,21 +1,22 @@
-export const brandVariations = ['default', 'primary', 'secondary', 'success', 'warning', 'danger'];
+export const brandVariations = ['primary', 'neutral', 'danger', 'warning', 'success', 'info'];
 export const textVariations = [
   'primary',
-  'secondary',
-  'success',
-  'warning',
+  'neutral',
   'danger',
+  'warning',
+  'success',
+  'info',
   'high-emphasis',
   'medium-emphasis',
   'low-emphasis',
 ];
 export const brandSpacings = ['none', 'sm', 'md', 'lg'];
 
-export const variationValidator = (value: string) => {
+export const colorVariationValidator = (value: string) => {
   return brandVariations.includes(value.toLowerCase());
 };
 
-export const textVariationValidator = (value: string) => {
+export const textColorVariationValidator = (value: string) => {
   return textVariations.includes(value.toLowerCase());
 };
 

@@ -10,7 +10,7 @@
 
 <script lang="ts">
 import { computed, defineComponent } from '@vue/composition-api';
-import { textVariationValidator } from '@/components/prop-validators';
+import { textColorVariationValidator } from '@/components/prop-validators';
 
 export default defineComponent({
   name: 'VueHeadline',
@@ -19,7 +19,7 @@ export default defineComponent({
     level: { type: String, required: true },
     appearanceLevel: { type: String, default: null },
     native: { type: Boolean, default: true },
-    color: { type: String, default: 'high-emphasis', validator: textVariationValidator },
+    color: { type: String, default: 'high-emphasis', validator: textColorVariationValidator },
   },
   setup(props) {
     const component = computed(() => {
@@ -49,20 +49,24 @@ export default defineComponent({
     color: var(--brand-primary);
   }
 
-  &.secondary {
-    color: var(--brand-secondary);
+  &.neutral {
+    color: var(--brand-neutral);
   }
 
-  &.success {
-    color: var(--brand-success);
+  &.danger {
+    color: var(--brand-danger);
   }
 
   &.warning {
     color: var(--brand-warning);
   }
 
-  &.danger {
-    color: var(--brand-danger);
+  &.success {
+    color: var(--brand-success);
+  }
+
+  &.info {
+    color: var(--brand-info);
   }
 
   &.high-emphasis {

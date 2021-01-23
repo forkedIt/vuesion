@@ -9,7 +9,7 @@ story.addParameters({ options: { showAddonPanel: false } });
 
 story.add('Intro', () => ({
   components: { VueMarkdown },
-  template: `<vue-markdown :use-router="false">
+  template: `<vue-markdown :style="{padding:'32px'}" :use-router="false">
 # Design System
 
 Vuesion comes with a Design System that you can 100% customize.
@@ -41,7 +41,7 @@ story.addParameters({ options: { showAddonPanel: false } });
 
 story.add('1. Color Palette', () => ({
   components: { VueMarkdown, ColorPalette },
-  template: `<div>
+  template: `<div :style="{padding:'32px'}">
 <vue-markdown :use-router="false">
 ### Color Palette
 </vue-markdown>
@@ -52,7 +52,7 @@ story.add('1. Color Palette', () => ({
 
 story.add('2. Color Tokens', () => ({
   components: { VueMarkdown, BrandColors },
-  template: `<div>
+  template: `<div :style="{padding:'32px'}">
 <vue-markdown :use-router="false">
 ### Brand Colors
 Every brand color is related to a color of the color palette.
@@ -68,7 +68,7 @@ story.addParameters({ options: { showAddonPanel: false } });
 
 story.add('Typography', () => ({
   components: { VueMarkdown },
-  template: `<vue-markdown :use-router="false">
+  template: `<vue-markdown :style="{padding:'32px'}" :use-router="false">
 ## Typography
 Inter is the standard type face for the Design System blueprint.
 
@@ -106,7 +106,7 @@ story.addParameters({ options: { showAddonPanel: false } });
 
 story.add('Layout', () => ({
   components: { VueMarkdown },
-  template: `<vue-markdown :use-router="false">
+  template: `<vue-markdown :style="{padding:'32px'}" :use-router="false">
 ## Layout
 The Grid-System is based on Flex box and comes in form of three included components.
 
@@ -143,7 +143,7 @@ story.addParameters({ options: { showAddonPanel: false } });
 
 story.add('Break points', () => ({
   components: { VueMarkdown },
-  template: `<vue-markdown :use-router="false">
+  template: `<vue-markdown :style="{padding:'32px'}" :use-router="false">
 ## Break points
 If you want to use a break point inside one of your components, we provide you width
 mixins to keep everything consistent and to avoid unnecessary media definitions:
