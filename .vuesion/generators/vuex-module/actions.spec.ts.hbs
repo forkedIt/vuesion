@@ -20,20 +20,20 @@ describe('{{ properCase singularName }}Actions', () => {
     getters: {{ properCase singularName }}Getters,
   };
 
-beforeEach(() => {
-  store = new Vuex.Store({
-    modules: {
-    {{ camelCase singularName }}: {{ properCase singularName }}Module,
-    },
-  } as any);
+  beforeEach(() => {
+    store = new Vuex.Store({
+      modules: {
+        {{ camelCase singularName }}: {{ properCase singularName }}Module,
+      },
+    } as any);
 
-  axiosMock = getAxiosMock();
+    axiosMock = getAxiosMock();
 
-  store.$axios = axiosMock;
-  store.commit = jest.fn();
+    store.$axios = axiosMock;
+    store.commit = jest.fn();
 
-  fixture = { id: '1' };
-});
+    fixture = { id: '1' };
+  });
 
   describe('fetch{{ properCase singularName }}s', () => {
     test('it should call SET_{{ constantCase pluralName }} on success', async () => {
@@ -56,22 +56,22 @@ beforeEach(() => {
   });
 
   describe('fetch{{ properCase singularName }}', () => {
-  test('it should call SET_CURRENT_{{ constantCase singularName }} on success', async () => {
-    axiosMock.onGet('/{{ camelCase pluralName }}/1').reply(200, fixture);
+    test('it should call SET_CURRENT_{{ constantCase singularName }} on success', async () => {
+      axiosMock.onGet('/{{ camelCase pluralName }}/1').reply(200, fixture);
 
-    await store.dispatch('{{ camelCase singularName }}/fetch{{ properCase singularName }}', '1');
-
-    expect(store.commit).toHaveBeenCalledWith('{{ camelCase singularName }}/SET_CURRENT_{{ constantCase singularName }}', fixture, undefined);
-  });
-
-  test('it should throw an error on failure', async () => {
-    axiosMock.onGet('/{{ camelCase pluralName }}/1').reply(500);
-
-    try {
       await store.dispatch('{{ camelCase singularName }}/fetch{{ properCase singularName }}', '1');
-    } catch (e) {
-      expect(e.message).toEqual('Request failed with status code 500');
-    }
+
+      expect(store.commit).toHaveBeenCalledWith('{{ camelCase singularName }}/SET_CURRENT_{{ constantCase singularName }}', fixture, undefined);
+    });
+
+    test('it should throw an error on failure', async () => {
+      axiosMock.onGet('/{{ camelCase pluralName }}/1').reply(500);
+
+      try {
+        await store.dispatch('{{ camelCase singularName }}/fetch{{ properCase singularName }}', '1');
+      } catch (e) {
+        expect(e.message).toEqual('Request failed with status code 500');
+      }
     });
   });
 
@@ -95,25 +95,25 @@ beforeEach(() => {
     });
   });
 
-describe('update{{ properCase singularName }}', () => {
-  test('it should call UPDATE_{{ constantCase singularName }} on success', async () => {
-    axiosMock.onPut('/{{ camelCase pluralName }}/1').reply(200, fixture);
+  describe('update{{ properCase singularName }}', () => {
+    test('it should call UPDATE_{{ constantCase singularName }} on success', async () => {
+      axiosMock.onPut('/{{ camelCase pluralName }}/1').reply(200, fixture);
 
-    await store.dispatch('{{ camelCase singularName }}/update{{ properCase singularName }}', fixture);
-
-    expect(store.commit).toHaveBeenCalledWith('{{ camelCase singularName }}/UPDATE_{{ constantCase singularName }}', fixture, undefined);
-  });
-
-  test('it should throw an error on failure', async () => {
-    axiosMock.onPut('/{{ camelCase pluralName }}/1').reply(500);
-
-    try {
       await store.dispatch('{{ camelCase singularName }}/update{{ properCase singularName }}', fixture);
-    } catch (e) {
-      expect(e.message).toEqual('Request failed with status code 500');
-    }
+
+      expect(store.commit).toHaveBeenCalledWith('{{ camelCase singularName }}/UPDATE_{{ constantCase singularName }}', fixture, undefined);
+    });
+
+    test('it should throw an error on failure', async () => {
+      axiosMock.onPut('/{{ camelCase pluralName }}/1').reply(500);
+
+      try {
+        await store.dispatch('{{ camelCase singularName }}/update{{ properCase singularName }}', fixture);
+      } catch (e) {
+        expect(e.message).toEqual('Request failed with status code 500');
+      }
+    });
   });
-});
 
   describe('delete{{ properCase singularName }}', () => {
     test('it should call DELETE_{{ constantCase singularName }} on success', async () => {
