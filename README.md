@@ -1,5 +1,3 @@
-<div style="text-align:center">
-
 # vuesion [![Tweet](https://img.shields.io/twitter/url?style=social&url=https%3A%2F%2Ftwitter.com%2Fvuesion1)](https://twitter.com/intent/tweet?text=Vuesion%20an%20enterprise%20ready%20boilerplate%20for%20isomorphic,%20progressive%20web%20apps%20with%20Vue.JS&url=https://github.com/vuesion/vuesion&via=vuesion1&hashtags=Vuesion,VueJS,SEO,Enterprise) <a href="https://slack-vuesion.herokuapp.com/" target="_blank"><img src="https://home-assistant.io/images/supported_brands/slack.png" height="20px" /></a> <a href="https://discord.gg/59x5cg2" target="_blank"><img src="https://cdn0.iconfinder.com/data/icons/square-logo-buttons/512/discord-1-128.png" height="20px" /></a>
 
 <img width="256px" height="256px" src="https://user-images.githubusercontent.com/1667598/55292014-ea98a800-53e5-11e9-82ca-11ba7bb2bbcd.png" alt="vuesion logo" align="center" />
@@ -23,8 +21,6 @@ Please visit the **[vuesion app on heroku!](https://vuesion.herokuapp.com/)**
 Or have a look into the future and visit the **[vuesion-next app on heroku!](https://vuesion-next.herokuapp.com/)**
 
 ![vuesion](https://user-images.githubusercontent.com/1667598/55291969-6d6d3300-53e5-11e9-8bdb-c9e2940ca927.gif)
-
-</div>
 
 # Features
 
