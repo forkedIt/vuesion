@@ -13,7 +13,7 @@ const config: Configuration = {
       login: '/',
       logout: '/',
       callback: '/',
-      home: '/',
+      home: '/example/dashboard',
     },
     strategies: {
       local: {
@@ -132,6 +132,9 @@ const config: Configuration = {
     icon: {
       fileName: 'logo.png',
     },
+  },
+  router: {
+    middleware: ['auth'],
   },
   srcDir: 'src',
   serverMiddleware: ['@/api/index.ts'],

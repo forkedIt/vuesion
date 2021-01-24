@@ -34,7 +34,8 @@ import VueHeadline from '@/components/atoms/VueHeadline/VueHeadline.vue';
 import VueButton from '@/components/atoms/VueButton/VueButton.vue';
 
 export default defineComponent({
-  name: 'Counter',
+  name: 'CounterPage',
+  auth: false,
   components: {
     VueGrid,
     VueGridRow,
