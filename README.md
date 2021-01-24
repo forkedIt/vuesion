@@ -1,8 +1,10 @@
+<div style="text-align:center">
+
 # vuesion [![Tweet](https://img.shields.io/twitter/url?style=social&url=https%3A%2F%2Ftwitter.com%2Fvuesion1)](https://twitter.com/intent/tweet?text=Vuesion%20an%20enterprise%20ready%20boilerplate%20for%20isomorphic,%20progressive%20web%20apps%20with%20Vue.JS&url=https://github.com/vuesion/vuesion&via=vuesion1&hashtags=Vuesion,VueJS,SEO,Enterprise) <a href="https://slack-vuesion.herokuapp.com/" target="_blank"><img src="https://home-assistant.io/images/supported_brands/slack.png" height="20px" /></a> <a href="https://discord.gg/59x5cg2" target="_blank"><img src="https://cdn0.iconfinder.com/data/icons/square-logo-buttons/512/discord-1-128.png" height="20px" /></a>
 
 <img width="256px" height="256px" src="https://user-images.githubusercontent.com/1667598/55292014-ea98a800-53e5-11e9-82ca-11ba7bb2bbcd.png" alt="vuesion logo" align="center" />
 
-> The most complete boilerplate for production-ready PWAs. With focus on performance, development speed, and best practices build with Nuxt.js
+_**The most complete boilerplate for production-ready PWAs. With focus on performance, development speed, and best practices build with Nuxt.js**_
 
 [![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg)](https://GitHub.com/vuesion/vuesion/graphs/commit-activity)
 [![CircleCI](https://circleci.com/gh/vuesion/vuesion.svg?style=svg)](https://circleci.com/gh/vuesion/vuesion)
@@ -21,6 +23,8 @@ Please visit the **[vuesion app on heroku!](https://vuesion.herokuapp.com/)**
 Or have a look into the future and visit the **[vuesion-next app on heroku!](https://vuesion-next.herokuapp.com/)**
 
 ![vuesion](https://user-images.githubusercontent.com/1667598/55291969-6d6d3300-53e5-11e9-8bdb-c9e2940ca927.gif)
+
+</div>
 
 # Features
 
@@ -74,23 +78,17 @@ Or have a look into the future and visit the **[vuesion-next app on heroku!](htt
 - Axios module
 - Anime.js integration
 
-# Documentation
-
-**[https://vuesion.github.io/docs/en/](https://vuesion.github.io/docs/en/)**
-
-### Lighthouse Score
-
-<img width="761" alt="bildschirmfoto 2019-01-19 um 14 24 32" src="https://user-images.githubusercontent.com/1667598/51427252-00c00600-1bf6-11e9-9ab4-9f043226db35.png">
-
 # Getting started
-
-## Via `npx`
 
 > Important note for **Windows users only**: https://github.com/zkat/npx/issues/146#issuecomment-384016791
 
 1. Run `npx @vuesion/create [project-name]` for example `npx @vuesion/create my-app` _(try the latest version by adding the `--next` flag)_
 2. Change directory `cd my-app`
 3. Run `npm run dev`
+
+# Documentation
+
+**[https://vuesion.github.io/docs/en/](https://vuesion.github.io/docs/en/)**
 
 # Support this project
 
@@ -103,8 +101,6 @@ Or have a look into the future and visit the **[vuesion-next app on heroku!](htt
 # Contribute
 
 Contributions are always welcome! Please read the [contribution guidelines](https://github.com/vuesion/vuesion/blob/master/.github/CONTRIBUTING.md) first.
-
-## Contributors
 
 Thanks goes to these wonderful people:
 
@@ -120,7 +116,7 @@ Thanks goes to these wonderful people:
 
 This project follows the [all-contributors](https://github.com/kentcdodds/all-contributors) specification. Contributions of any kind welcome!
 
-# Reference resources
+# References
 
 - [nuxt](https://nuxtjs.org/)
 - [nuxt/auth](https://auth.nuxtjs.org/guide/setup/)
