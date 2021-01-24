@@ -49,6 +49,7 @@ Or have a look into the future and visit the **[vuesion-next app on heroku!](htt
   - typography, button, input, select, checkbox, radio, (range-)slider, toggle
   - dropdown, modal, tooltip, carousel, notifications
   - data-table, accordion, auto-complete, calendar, date-(range-)picker, grid, tabs
+  - theming support
 - SEO support
 - i18n support
 - Authentication module
