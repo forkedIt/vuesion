@@ -1,4 +1,5 @@
 import { Configuration } from '@nuxt/types';
+import { VuesionConfig } from '@vuesion/models';
 
 const config: Configuration = {
   auth: {
@@ -75,25 +76,8 @@ const config: Configuration = {
   i18n: {
     strategy: 'no_prefix',
     vueI18n: '@/plugins/vue-i18n/vue-i18n',
-    locales: [
-      {
-        code: 'en',
-        file: 'en.json',
-      },
-      {
-        code: 'de',
-        file: 'de.json',
-      },
-      {
-        code: 'pt',
-        file: 'pt.json',
-      },
-      {
-        code: 'zh-cn',
-        file: 'zh-cn.json',
-      },
-    ],
-    defaultLocale: 'en',
+    locales: VuesionConfig.i18n.locales,
+    defaultLocale: VuesionConfig.i18n.defaultLocale,
     lazy: true,
     langDir: '../i18n/',
     detectBrowserLanguage: {
@@ -101,7 +85,7 @@ const config: Configuration = {
       cookieDomain: null,
       cookieKey: 'i18n_redirected',
       alwaysRedirect: true,
-      fallbackLocale: 'en',
+      fallbackLocale: VuesionConfig.i18n.defaultLocale,
     },
     vuex: {
       moduleName: 'i18n',
